@@ -5,20 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="CausalEvo: causal skill self-evolution for health LLM agents. Learn which textual rules to retain through controlled, fixed-capacity comparisons.">
   <meta name="theme-color" content="#fafaf8">
-  <meta property="og:title" content="CausalEvo — Causal Skill Self-Evolution for Health LLM Agents">
+  <meta property="og:title" content="CausalEvo">
   <meta property="og:description" content="A frozen model proposes rules. Controlled skill exchanges guide what to retain.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://txbrook.github.io/CausalEvo/">
   <meta property="og:image" content="https://txbrook.github.io/CausalEvo/assets/overview.png">
   <link rel="canonical" href="https://txbrook.github.io/CausalEvo/">
   <link rel="stylesheet" href="style.css">
-  <title>CausalEvo | Causal Skill Self-Evolution for Health LLM Agents</title>
+  <title>CausalEvo</title>
   <script src="site.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header shell">
-    <a class="wordmark" href="#">CausalEvo<span aria-hidden="true">.</span></a>
+    <a class="wordmark" href="#">CausalEvo</a>
     <nav aria-label="Main navigation">
       <a href="#method">Method</a>
       <a href="#results">Results</a>
@@ -28,11 +28,14 @@
 
   <main id="main">
     <section class="hero shell" aria-labelledby="project-title">
-      <p class="eyebrow">GenAI for Health Workshop · NeurIPS 2026</p>
+      <a class="conference-mark" href="https://genai4health.github.io/2026-NeurIPS/" aria-label="GenAI for Health Workshop at NeurIPS 2026">
+        <!-- NeurIPS logo from https://neurips.cc/public/MediaKit -->
+        <img src="assets/neurips-logo.svg" width="94" height="42" alt="NeurIPS">
+        <span>NeurIPS 2026</span>
+      </a>
+      <p class="eyebrow">GenAI for Health Workshop</p>
       <h1 id="project-title">CausalEvo</h1>
-      <p class="subtitle">Causal Skill Self-Evolution<br>for Health LLM Agents</p>
-      <p class="author">Yuchen Zhang</p>
-      <p class="affiliation">The University of Texas Health Science Center at Houston</p>
+      <p class="subtitle">Causal Skill Self Evolution<br>for Health LLM Agents</p>
       <div class="actions">
         <a class="button primary" href="https://arxiv.org/abs/2610.21016">Read the paper <span aria-hidden="true">↗</span></a>
         <a class="button secondary" href="https://github.com/txbrook/CausalEvo">View code <span aria-hidden="true">↗</span></a>
@@ -42,8 +45,8 @@
 
     <section class="section shell" id="method" aria-labelledby="method-title">
       <div class="section-heading">
-        <p class="section-number">01 / Method</p>
-        <h2 id="method-title">Propose. Compare. Retain.</h2>
+        <p class="section-number">Method</p>
+        <h2 id="method-title">Propose compare and retain</h2>
         <p>A frozen model learns through its instructions. Model weights, feedback cases, and rule count stay fixed during each paired comparison.</p>
       </div>
       <figure class="overview">
@@ -62,13 +65,13 @@
     <section class="section results-section" id="results" aria-labelledby="results-title">
       <div class="shell">
         <div class="section-heading">
-          <p class="section-number">02 / Results</p>
-          <h2 id="results-title">Health calculation, measured.</h2>
+          <p class="section-number">Results</p>
+          <h2 id="results-title">Health calculation results</h2>
           <p>Six MedCalc-Bench-Verified tasks. 120 held-out cases.<br>All final skills evaluated with the same thinking-off actor.</p>
         </div>
         <div class="charts">
           <figure class="chart" aria-labelledby="accuracy-title">
-            <h3 id="accuracy-title">Held-out accuracy</h3>
+            <h3 id="accuracy-title">Evaluation accuracy</h3>
             <p class="chart-description">Final frozen skill states</p>
             <div class="bar-rows">
               <div class="bar-row featured"><div class="bar-label"><span>CausalEvo</span><strong>60.00%</strong></div><div class="bar-track" aria-hidden="true"><span class="bar-fill" style="--bar:60%"></span></div></div>
@@ -95,8 +98,8 @@
 
     <section class="section shell resources" aria-label="Code and citation">
       <div class="code-intro">
-        <p class="section-number">03 / Code</p>
-        <h2>Start with the core.</h2>
+        <p class="section-number">Code</p>
+        <h2>Start with the core</h2>
         <p>The exchange controller, exact cycle fit, and skill-selection logic are available in Python. A small synthetic demo runs with the standard library.</p>
         <pre class="quickstart"><code>git clone https://github.com/txbrook/CausalEvo.git
 cd CausalEvo

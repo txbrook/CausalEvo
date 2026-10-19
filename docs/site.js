@@ -1,0 +1,18 @@
+const copyButton = document.getElementById('copy-citation');
+const citation = document.getElementById('bibtex');
+const copyStatus = document.getElementById('copy-status');
+
+copyButton.hidden = false;
+copyButton.addEventListener('click', async () => {
+  try {
+    await navigator.clipboard.writeText(citation.textContent);
+    copyStatus.textContent = 'Citation copied.';
+  } catch {
+    const selection = window.getSelection();
+    const range = document.createRange();
+    range.selectNodeContents(citation);
+    selection.removeAllRanges();
+    selection.addRange(range);
+    copyStatus.textContent = 'Citation selected. Press Ctrl+C or ⌘C to copy.';
+  }
+});

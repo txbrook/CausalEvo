@@ -2,6 +2,8 @@
 
 This repository provides the core implementation for **[CausalEvo: Causal Skill Self-Evolution for Health LLM Agents](https://arxiv.org/abs/2610.21016)**, by Yuchen Zhang, accepted at the GenAI for Health Workshop at NeurIPS 2026.
 
+[Project page](https://txbrook.github.io/CausalEvo/) · [Paper](https://arxiv.org/abs/2610.21016)
+
 CausalEvo maintains four textual rules. Each evolution step pools the incumbent rules with two proposals, compares four-rule subsets through six paired exchanges, and fits relative rule values by least squares. It retains the four highest-valued rules, favoring incumbents on exact ties. The first step proposes six rules from an empty state.
 
 ## Run

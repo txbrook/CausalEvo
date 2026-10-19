@@ -20,6 +20,7 @@ nav a{color:var(--muted)}
 .eyebrow,.section-number{font-size:11px;font-weight:600;letter-spacing:1.7px;text-transform:uppercase;color:var(--accent);margin:0 0 20px}
 h1{font:normal clamp(62px,8vw,96px)/1.06 var(--serif);letter-spacing:-4px;margin:0 0 18px}
 .subtitle{font:normal clamp(24px,3.25vw,35px)/1.32 var(--serif);letter-spacing:-.55px;margin:0 0 28px}
+.affiliation{font-size:13px;color:var(--muted);margin:0 auto;max-width:100%}
 .actions{display:flex;gap:12px;justify-content:center;margin:27px 0 31px}
 .button{display:inline-flex;align-items:center;justify-content:center;gap:18px;border:1px solid var(--accent);border-radius:5px;padding:10px 20px;font-size:13px;font-weight:550;transition:background .15s,color .15s}
 .button:hover{text-decoration:none}
